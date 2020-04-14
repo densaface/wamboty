@@ -1,0 +1,12 @@
+[
+            {"nick": "Name1", "heroes": 4, "bound": "google", "gmail": "gmail_Name1", "train": ["knight"], "notgrow": 1, "main": 1, "monster_battles": [14]},
+
+            {"nick": "Name2", "heroes": 3, "bound": "google", "gmail": "gmail_Name2",
+             "monster_battles": [10, 6, 7, 8, 9], "upgrade_med": 0, "mine": 1, "notgrow": 1, "noattack_enemy": 1
+			 , "train": ["guard", "knight", "priestess"]},
+
+            {"nick": "Name3", "heroes": 2, "bound": "mail", "login": "mymail@mail.com", "pas": "pas",
+             "monster_battles": [10, 6, 7, 8, 9], "mine": 1, "noattack_enemy": 1
+			 , "train": ["guard", "crossbow", "knight", "priestess"]
+			 }
+]
