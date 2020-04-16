@@ -1037,7 +1037,7 @@ class WAMWorker(object):
                     if common.is_stat_more_dif_time(stat, 2 * 60 * 60, 'get_events') and not 'main' in acc:
                         game.get_all_quests(acc)
                         game.get_events()
-                        if not 'main' in acc or not acc['main']:
+                        if (not 'main' in acc or not acc['main']) and (not 'nomed_upgrade' in acc or not acc['nomed_upgrade']):
                             game.upgrade_med()
                         stat['get_events'] = int(time.time())
                         stat['get_events_str'] = time.asctime(time.localtime(time.time()))
