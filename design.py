@@ -315,7 +315,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "WamyBoty 0.25"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "WamyBoty 0.27"))
         self.buttonMakeScreen.setText(_translate("MainWindow", "Сделать скриншот"))
         self.label_2.setText(_translate("MainWindow", "Имя эмулятора"))
         self.editEmul_2.setText(_translate("MainWindow", "MEmu"))
