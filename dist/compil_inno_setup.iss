@@ -5,8 +5,8 @@
 AppId={{9119A44D-E936-4BD3-B973-26333118776F}
 VersionInfoCompany=Botovod
 VersionInfoProductName=WamyBoty
-VersionInfoVersion=0.27
-AppVerName=WamyBoty 0.27
+VersionInfoVersion=0.28
+AppVerName=WamyBoty 0.28
 OutputBaseFilename=wamyboty_setup
 AppName=WamyBoty
 AppPublisher=Botovod

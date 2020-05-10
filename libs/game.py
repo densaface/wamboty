@@ -2263,16 +2263,17 @@ class Game(object):
                             sleep(0.3)
                 else:
                     ret = self.device.wait_for(('gold_donate', 'union_don_food'), attempts=2, threshold=0.85)
-                    for ii in range(50):
+                    for ii in range(25):
                         if 'gold_don' in acc and acc['gold_don']:
                             self.device.tap(ret[1])
                             if ii > 30:
                                 self.device.tap((645, 330))
                                 self.device.tap((430, 330))
                         else:
-                            self.device.tap((645, 330))
-                            self.device.tap((430, 330))
-                        if ii and ii % 10 == 0:
+                            # разрешаем донатить только хлеб и каждую картинку ищем, иначе есть риск вынуть безопасный хлеб из рюкзака
+                            if not self.device.tap_on('union_don_food2', attempts=1, threshold=0.75):
+                                break
+                        if ii % 5 == 0:
                             if self.device.wait_for('donate_cooldown08', attempts=1, threshold=0.9)[0]:
                                 break
             else:
